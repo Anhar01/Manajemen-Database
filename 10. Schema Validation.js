@@ -1,9 +1,5 @@
 # 10. Schema Validation
 
-Digunakan untuk memvalidasi struktur dokumen dalam collection.
-
-Contoh:
-```js
 db.createCollection("produk", {
   validator: {
     $jsonSchema: {
@@ -22,4 +18,4 @@ db.createCollection("produk", {
     }
   }
 })
-```
+
