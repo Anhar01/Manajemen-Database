@@ -1,9 +1,5 @@
 # 7. Logical Query
 
-Digunakan untuk menggabungkan kondisi logika.
-
-Contoh:
-```js
 db.pelanggan.find({
   $and: [{ umur: { $gt: 20 } }, { umur: { $lt: 30 } }]
 })
@@ -13,4 +9,4 @@ db.pelanggan.find({
 })
 
 db.pelanggan.find({ umur: { $not: { $gt: 30 } } })
-```
+
